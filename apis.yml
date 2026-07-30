@@ -1,7 +1,25 @@
 aid: kanoodle
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kanoodle.png
 name: Kanoodle
-description: Kanoodle is a company surfaced as a portfolio company of insight-partners and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Kanoodle was an online advertising network founded in 1999 by Kent Keating, specializing
+  in search-targeted and later content-targeted (contextual) sponsored links, adding partners such as
+  CBS MarketWatch in January 2004. In August 2006 it restructured under a new parent company, Seevast
+  Corp - the search-advertising business kept the Kanoodle brand, the content-targeted contextual ad
+  product was spun out as Pulse 360, and the newly acquired Moniker.com domain registrar ran as a
+  separate unit. Listed here as an Insight Partners portfolio company, Kanoodle/Seevast is defunct and
+  exposes no surviving public API, developer portal, SDK, or documentation - the seevast.com domain now
+  resolves to a parked-domain lander. This profile is retained as a historical portfolio lead.
 url: https://raw.githubusercontent.com/api-evangelist/kanoodle/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +27,20 @@ x-backed-by:
 - insight-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-note: Restructured into Seevast Corp (2006); no surviving public API or developer surface. seevast.com
+  is a parked-domain lander as of 2026-07.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Advertising
+- AdTech
+- Contextual Advertising
+- Search Advertising
+- Sponsored Links
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +50,8 @@ maintainers:
 common:
 - type: Website
   url: http://www.seevast.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
